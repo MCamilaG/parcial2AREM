@@ -17,10 +17,10 @@ import java.util.logging.Logger;
  */
 public class Cliente extends Thread{
     
-     public final static int THREADS = 1;
+     public final static int THREADS = 20;
      
      public static void main(String[] args){
-        for(int i=0;i<1;i++){
+        for(int i=0;i<20;i++){
             Thread thread = new Cliente();
             thread.start();
         }    
